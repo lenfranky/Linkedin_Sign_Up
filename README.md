@@ -11,14 +11,17 @@ python：2.7
 先安装selenium库（pip或者conda install等方法），再下载chrome驱动，放入chrome安装目录（一般是'..\Google\Chrome\Application')，注意驱动的版本要与浏览器相同（下附版本对照表），浏览器的版本可以在刚才的安装路径中看到一个文件夹的名称便是（一般为60.x-66.x），然后将该安装路径添加到系统变量 ，重启机器。
 ##### 附chrome与驱动版本对照表：
 chrome的版本一般显示为6x.x，但是驱动的版本不是与其相同，而是以以下方式对应：
+
 |chromedriver版本  |支持的Chrome版本
 | :-------------:|:-------------:|
 |v2.37|	v64-66|
 |v2.36|	v63-65|
 |v2.35|	v62-64|
 |v2.34|	v61-63|
+
 常用的是这些，更多的对照可以看这个网页:https://blog.csdn.net/huilan_same/article/details/51896672
-驱动的下载官方网页是：'https://sites.google.com/a/chromium.org/chromedriver/downloads'，但是需要翻墙，也可以在'http://npm.taobao.org/mirrors/chromedriver/'这个镜像站下载。
+
+驱动的下载官方网址是：[官方驱动网址](https://sites.google.com/a/chromium.org/chromedriver/downloads)，但是官方的这个网址需要翻墙，也可以在[驱动镜像网站](http://npm.taobao.org/mirrors/chromedriver/)这个镜像站下载。
 ###  `selenium`的使用：
 安装`selenium`之后，可以运行以下代码进行尝试，若成功打开百度首页说明`selenium`库安装成功。
 ```
