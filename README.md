@@ -4,11 +4,11 @@ Implement automatic registration for Linkedin (https://www.linkedin.com/).
 ## 所用环境
 python：2.7  
 浏览器：chrome  
-系统：win10 , MS Office  
+系统：win 10 , MS Office  
 所用的库大部分都比较常用，如codecs，部分库可能需要单独安装，比如win32比如`win32com`与`selenium`  
 ## `selenium`的安装与使用：
 ###  `selenium`的安装：
-先安装selenium库（pip或者conda install等方法），再下载chrome驱动，放入chrome安装目录（一般是`..\Google\Chrome\Application`)，注意驱动的版本要与浏览器相同（下附版本对照表），浏览器的版本可以在刚才的安装路径中看到一个文件夹的名称便是（一般为60.x-66.x），然后将该安装路径添加到系统变量 ，重启机器。
+先安装selenium库（pip或者conda install等方法），再下载chrome驱动，放入chrome安装目录（一般是`..\Google\Chrome\Application`)，注意驱动的版本要与浏览器相同（下附版本对照表），浏览器的版本可以在刚才的安装路径中看到一个文件夹的名称便是（一般为60.x-66.x），然后将该安装路径添加到系统变量的path中 ，重启机器。
 ##### 附chrome与驱动版本对照表：
 chrome的版本一般显示为6x.x，但是驱动的版本不是与其相同，而是以以下方式对应：
 
@@ -37,7 +37,7 @@ browser.close()
 ## 程序
 
 ####  数据文档准备
-将个人的类似于 `jionglu85889456993@126.com----jiao6735` 格式的txt文档中的账户密码直接粘贴进data文件下的`mailbox_account_origin.txt`中，并运行一次code文件夹中的`account_preprocess.py`进行数据的预处理。     
+将个人的类似于 `jionglu85889456993@126.com----jiao6735` 格式的txt文档中的账户密码直接粘贴进data文件下的`mailbox_account_origin.txt`中（将原来的两行示例数据覆盖），并运行一次code文件夹中的`account_preprocess.py`进行数据的预处理。     
 
 注意：只复制尚未申请过的账户密码！        
 
